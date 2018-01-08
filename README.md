@@ -4,7 +4,7 @@
 위키 페이지를 보세요.
 https://github.com/edimoon777/DL_drone/wiki
 
-커뮤니티
+커뮤니티 (비공개 그룹)
 https://www.facebook.com/groups/2017423898535347/?ref=bookmarks
 
 
