@@ -1,10 +1,13 @@
 # 딥러닝 드론 그룹에 오신 것을 환영합니다.
 페이스북 그룹 (비공개 그룹) <br/>
 https://www.facebook.com/groups/2017423898535347/?ref=bookmarks
+<p></p>
 
-## 딥러닝 드론 제작 정보
+# 드론 제작 정보
 https://github.com/edimoon777/DL_drone/wiki
+<p></p>
 
+# 알고리즘 구현
 ## 오픈소스 기반 기계학습 알고리즘 활용을 위한 환경 구성
 오픈소스를 기반으로 여러 기계학습 알고리즘을 이용하기 위해서 필요한 환경 구성
 
@@ -19,7 +22,8 @@ https://github.com/edimoon777/DL_drone/wiki
   * [Keras 개요](https://www.slideshare.net/madvirus/keras-intro)
 * [Caffe](http://caffe.berkeleyvision.org/)
 * [Deeplearning4j](https://deeplearning4j.org/kr/compare-dl4j-torch7-pylearn)
+<p></p>
 
-## 기타
-### Ubuntu 기본
+# 기타
+## Ubuntu 기본
 * [Ubuntu 즐기기](https://github.com/edimoon777/DL_drone/blob/collaborate_lim/docs/EnjoyUbuntu.md)
