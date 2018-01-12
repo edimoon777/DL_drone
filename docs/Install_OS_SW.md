@@ -62,6 +62,13 @@
 ```
 * Anaconda를 사용할 경우 위에서 언급했듯이 `~$ conda create -n ENVNAME python=3.6`과 같이 반드시 별도의 environment를 생성해서 Tensorflow를 설치하는 것이 바람직하다. 그렇지 않으면 추후 다른 프로그램 설치 과정에서 일부 패키지를 업데이트하여 고둥에 문제 발생할 수 있기 때문이다.
 
+# git 설치
+* GitHub, Unreal Engine, AirSim 등을 활용하기 위하여 우분투에 git을 설치한다.
+```
+~$ sudo apt-get update
+~$ sudo apt-get install git
+```
+
 # 구동
 * 위와 같이 설치하고 나서 spyder를 통해서 Tensorflow를 구동하고자 할 때에는 아래와 같이 구동한다.
   * `~$ source activate ENVNAME`
