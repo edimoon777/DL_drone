@@ -13,9 +13,9 @@ https://github.com/edimoon777/DL_drone/wiki
 ## 오픈소스 기반 기계학습 알고리즘 활용을 위한 환경 구성
 오픈소스를 기반으로 여러 기계학습 알고리즘을 이용하기 위해서 필요한 환경 구성
 
-1. [OS 및 기본 SW 설치하기](/blob/master/docs/Install_OS_SW.md)
-2. [TensorFlow 설치하기](https://github.com/edimoon777/DL_drone/blob/collaborate_lim/docs/Install_TensorFlow.md)
-3. [AirSim 설치하기](https://github.com/Microsoft/AirSim/blob/master/docs/build_linux.md)
+1. [OS 및 기본 SW 설치하기](/docs/Install_OS_SW.md)
+2. [TensorFlow 설치하기](/docs/Install_TensorFlow.md)
+3. [AirSim 설치하기](/docs/build_linux.md)
 4. Python에서 AirSim 연동하기 (업로드 예정)
 
 ## 오픈소스 기계학습 프레임워크
@@ -36,4 +36,4 @@ https://github.com/edimoon777/DL_drone/wiki
 
 # 기타
 ## Ubuntu 기본
-* [Ubuntu 즐기기](https://github.com/edimoon777/DL_drone/blob/collaborate_lim/docs/EnjoyUbuntu.md)
+* [Ubuntu 즐기기](/docs/EnjoyUbuntu.md)
