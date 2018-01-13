@@ -2,12 +2,12 @@
 페이스북 그룹 (비공개 그룹) <br/>
 https://www.facebook.com/groups/2017423898535347/?ref=bookmarks
 
-<br/><br/><br/>
+<br/><br/>
 
 # 드론 제작 정보
 https://github.com/edimoon777/DL_drone/wiki
 
-<br/><br/><br/>
+<br/><br/>
 
 # 알고리즘 연구환경 구축
 ## 오픈소스 기반 기계학습 알고리즘 활용을 위한 환경 구성
@@ -26,13 +26,13 @@ https://github.com/edimoon777/DL_drone/wiki
 * [Caffe](http://caffe.berkeleyvision.org/)
 * [Deeplearning4j](https://deeplearning4j.org/kr/compare-dl4j-torch7-pylearn)
 
-<br/><br/><br/>
+<br/><br/>
 
 # 기계학습 이론 공부
 * [모두를 위한 머신러닝/딥러닝 강의](http://hunkim.github.io/ml/)
 * [딥러닝 공부방법 from 남세동](https://www.facebook.com/dgtgrade/posts/1672920599433466)
 
-<br/><br/><br/>
+<br/><br/>
 
 # 기타
 ## Ubuntu 기본
