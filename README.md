@@ -15,7 +15,7 @@ https://github.com/edimoon777/DL_drone/wiki
 
 1. [OS 및 기본 SW 설치하기](/docs/Install_OS_SW.md)
 2. [TensorFlow 설치하기](/docs/Install_TensorFlow.md)
-3. [AirSim 설치하기](/docs/build_linux.md)
+3. [AirSim 설치하기](https://github.com/Microsoft/AirSim/blob/master/docs/build_linux.md)
 4. Python에서 AirSim 연동하기 (업로드 예정)
 
 ## 오픈소스 기계학습 프레임워크
@@ -30,7 +30,7 @@ https://github.com/edimoon777/DL_drone/wiki
 
 # 기계학습 이론 공부
 * [모두를 위한 머신러닝/딥러닝 강의](http://hunkim.github.io/ml/)
-* [남세동 사장 조언](https://www.facebook.com/dgtgrade/posts/1672920599433466)
+* [딥러닝 공부방법 from 남세동](https://www.facebook.com/dgtgrade/posts/1672920599433466)
 
 <br/><br/><br/>
 
