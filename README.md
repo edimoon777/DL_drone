@@ -1,9 +1,12 @@
 # 딥러닝 드론 그룹에 오신 것을 환영합니다.
+
 [페이스북 그룹 (비공개 그룹)](https://www.facebook.com/groups/2017423898535347/?ref=bookmarks)
+
 
 <br/><br/>
 
-# [드론 제작 정보](https://github.com/edimoon777/DL_drone/wiki)
+# 드론 제작 정보
+1. [딥러닝 드론 정리](https://github.com/edimoon777/DL_drone/wiki)
 
 <br/><br/>
 
