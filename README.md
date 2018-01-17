@@ -4,7 +4,9 @@
 <br/>
 
 # 드론 제작 정보
-1. [딥러닝 드론 정리](https://github.com/edimoon777/DL_drone/wiki)
+1. [딥러닝 드론 플랫폼 정리](https://github.com/edimoon777/DL_drone/wiki)
+2. [모두의 연구소 DCULab ](http://www.modulabs.co.kr/board_GDCH80)
+
 <br/>
 
 # 알고리즘 연구환경 구축
