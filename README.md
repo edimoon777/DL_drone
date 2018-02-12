@@ -16,15 +16,10 @@
 1. [OS 및 기본 SW 설치하기](/docs/Install_OS_SW.md)
 1. [TensorFlow 설치하기](/docs/Install_TensorFlow.md)
 1. [Keras 설치하기](https://keras.io/#installation)
-  * HDF5, h5py 설치하기
- ```
- ~$ conda install h5py
- ```
+  * HDF5, h5py 설치하기 `~$ conda install h5py`
   * virtual environment 활성화 후에 keras 설치
-  ```
-  ~$ source activate ENVNAME
-  ~$ pip install keras
-  ```
+  `~$ source activate ENVNAME`
+  `~$ pip install keras`
 1. [AirSim 설치하기](https://github.com/Microsoft/AirSim/blob/master/docs/build_linux.md)
 1. [조이스틱 연결하기](/docs/Set_Joystick.md)
 1. Python에서 AirSim 연동하기 (업로드 예정)
