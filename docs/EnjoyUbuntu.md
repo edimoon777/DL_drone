@@ -12,6 +12,7 @@
 * `rm` 파일 지우기
 * `chmod` 파일 권한 바꾸기
 * `cmp` 파일 비교하기
+<br/><br/><br/>
 
 # Ubuntu apt-get 명령어 (https://blog.outsider.ne.kr/346)
 * apt를 이용해서 설치된 deb패키지는 /var/cache/apt/archive/ 에 설치된다.
@@ -64,3 +65,11 @@
 ```
 ~$ sudo apt-cache show PACKAGENAME
 ```
+<br/><br/><br/>
+
+# .deb 파일 설치하기
+* .deb 파일이 있는 디렉토리로 이동하여 아래 명령어 실행
+```
+~$ sudo dpkg -i FILENAME.deb
+```
+* 파일명이 복잡할 경우에는 파일명을 대충 입력하고 Tab키를 누르면 자동완성기능을 활용할 수 있다.
