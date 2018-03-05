@@ -15,7 +15,35 @@
 ~$ sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
+# virtualenv 설치하기 [[참고](https://gist.github.com/Geoyi/d9fab4f609e9f75941946be45000632b)]
+* pip 설치
+```
+sudo apt-get install python3-pip
+```
+
+* pip3를 통해 virtualenv 설치하기
+```
+pip3 intstall virtualenv
+```
+
+*  가상환경(virtual environment) 생성하기
+```
+virtualenv ENVNAME
+virtualenv -p /usr/bin/python3 ENVNAME
+```
+
+* 가상환경 활성화
+```
+source ENVNAME/bin/activate
+```
+
+* 가상환경 비활성화
+```
+deactivate
+```
+
 # Anaconda 설치
+※ Anaconda 기반의 개발환경은 향후 삭제 예정
 ※ Tensorflow 1.4.0에서는 Python 3.6을 지원한다. [참고사이트](https://www.tensorflow.org/install/install_linux#python_36)
 * 다운로드한다. https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
 * 터미널 창에서 아래와 같이 입력하여 설치한다.

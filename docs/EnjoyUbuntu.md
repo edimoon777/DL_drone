@@ -77,3 +77,31 @@
 ~$ sudo dpkg -i FILENAME.deb
 ```
 * 파일명이 복잡할 경우에는 파일명을 대충 입력하고 Tab키를 누르면 자동완성기능을 활용할 수 있다.
+<br/><br/><br/>
+
+# virtualenv 설치하기 [[참고](https://gist.github.com/Geoyi/d9fab4f609e9f75941946be45000632b)]
+* pip 설치
+```
+sudo apt-get install python3-pip
+```
+
+* pip3를 통해 virtualenv 설치하기
+```
+sudo pip3 intstall virtualenv
+```
+
+*  가상환경(virtual environment) 생성하기
+```
+virtualenv ENVNAME
+virtualenv -p /usr/bin/python3 ENVNAME
+```
+
+* 가상환경 활성화
+```
+source ENVNAME/bin/activate
+```
+
+* 가상환경 비활성화
+```
+deactivate
+```
