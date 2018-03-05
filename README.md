@@ -36,6 +36,5 @@
 
 <br/><br/>
 
-# 기타
-## Ubuntu 기본
+# Ubuntu 기본
 * [Ubuntu 즐기기](/docs/EnjoyUbuntu.md)

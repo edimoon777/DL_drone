@@ -1,4 +1,4 @@
-# Ubuntu 기본 명령어 (http://yahweh0.blog.me/)
+# Ubuntu 기본 명령어 [[참고](http://yahweh0.blog.me/)]
 * `ls` 디렉토리 검색
 * `cd DIRECTORYNAME` 디렉토리 내로 진입
 * `./FILENAME` 파일 실행
@@ -14,7 +14,7 @@
 * `cmp` 파일 비교하기
 <br/><br/><br/>
 
-# Ubuntu apt-get 명령어 (https://blog.outsider.ne.kr/346)
+# Ubuntu apt-get 명령어 [[참고](https://blog.outsider.ne.kr/346)]
 * apt를 이용해서 설치된 deb패키지는 /var/cache/apt/archive/ 에 설치된다.
 
 * 설치된 패키지 정보 확인
@@ -44,10 +44,14 @@
 ~$ sudo apt-get --reinstall install PACKAGENAME
 ```
 
-* 패키지 삭제
+* 패키지 삭제 (설정파일 유지)
 ```
 ~$ sudo apt-get remove PACKAGENAME
-~$ sudo apt-get --purge remove PACKGENAME (설정파일까지 모두 지움)
+```
+
+* 패키지 완전 삭제 
+```
+~$ sudo apt-get purge PACKGENAME (설정파일까지 모두 지움)
 ```
 
 * 패키지 소스코드 다운로드
@@ -56,7 +60,7 @@
 ~$ sudo apt-get build-dep PACKGENAME (다운로드한 소스코드를 의존성에 맞춰(?) 빌드)
 ```
 
-* 패키지 검색
+* 패키지 검색 (PACKAGENAME를 포함한 패키지)
 ```
 ~$ sudo apt-cache search PACKAGENAME
 ```
