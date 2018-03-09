@@ -42,7 +42,15 @@ source ENVNAME/bin/activate
 deactivate
 ```
 
-# Anaconda 설치
+# git 설치
+* GitHub, Unreal Engine, AirSim 등을 활용하기 위하여 우분투에 git을 설치한다.
+```
+~$ sudo apt-get update
+~$ sudo apt-get install git
+```
+
+
+# Anaconda 설치 (개발환경용으로는 비추천)
 ※ Anaconda 기반의 개발환경은 향후 삭제 예정
 ※ Tensorflow 1.4.0에서는 Python 3.6을 지원한다. [참고사이트](https://www.tensorflow.org/install/install_linux#python_36)
 * 다운로드한다. https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
