@@ -35,13 +35,33 @@
 # TensorFlow 1.6 설치 (Python 3.n 기준)
 * 참고 사이트: https://www.tensorflow.org/install/install_linux#InstallingVirtualenv
 * 아래 코드 참고하여 설치한다. (ENVNAME은 사용자가 정하는 임의의 environment 명)
+
+1. PIP와 virtualEnvironment를 설치한다.
 ```
 ~$ sudo apt-get install python3-pip python3-dev python-virtualenv
+```
+
+2. Virtual Environment를 생성한다. (ENVNAME 부분에 본인이 원하는 이름을 설정합니다.
+ ```
+~$ cd ~
 ~$ virtualenv --system-site-packages -p python3 ENVNAME
+```
+
+3. Virtual Environment를 활성화한다.
+```
 ~$ source ~/ENVNAME/bin/activate
+```
+
+4. 파이썬 패키지를 자동으로 다운로드, 빌드, 설치한다.
+```
 (ENVNAME) ~$ easy_install -U pip
+```
+
+5. 텐서플로우를 설치한다.
+```
 (ENVNAME) ~$ pip3 install --upgrade tensorflow-gpu
 ```
+
 * 아래 코드를 참고하여 정상설치 여부를 확인한다.
 ```
 (ENVNAME) ~$ python
