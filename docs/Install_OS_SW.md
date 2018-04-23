@@ -8,11 +8,17 @@
 * Ubuntu에서 한글입력이 가능하도록 설정한다.<br />http://hochulshin.com/ubuntu-1604-hangul/
 
 # Chrome 설치
+
+방법1.  
 아래 명령어를 터미널 창에서 수행한다. https://brunch.co.kr/@hancoma/90
 ```
 ~$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 ~$ sudo apt-get install libxss1 libgconf2-4 libappindicator1 libindacator7
 ~$ sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
+방법2.  
+```
+~$ sudo apt-get install chrome
 ```
 
 # virtualenv 설치하기 [[참고](https://gist.github.com/Geoyi/d9fab4f609e9f75941946be45000632b)]
