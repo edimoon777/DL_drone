@@ -33,6 +33,7 @@
 (Test passed!가 출력되면 정상 설치된 것이다.)
 
 # TensorFlow 1.6 설치 (Python 3.n 기준)
+* 본 과정부터는 가상환경을 적용하는 것이 안정적인 개발환경을 구축하는데 도움이 된다.
 * 참고 사이트: https://www.tensorflow.org/install/install_linux#InstallingVirtualenv
 * 아래 코드 참고하여 설치한다. (ENVNAME은 사용자가 정하는 임의의 environment 명)
 ```

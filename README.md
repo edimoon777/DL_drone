@@ -14,10 +14,11 @@
 오픈소스를 기반으로 여러 기계학습 알고리즘을 이용하기 위해서 필요한 환경 구성
 
 1. [OS 및 기본 SW 설치하기](/docs/Install_OS_SW.md)
-1. [TensorFlow 설치하기](/docs/Install_TensorFlow.md)
-1. [Keras 설치하기](/docs/Install_Keras.md)
 1. [AirSim 설치하기](https://github.com/Microsoft/AirSim/blob/master/docs/build_linux.md)
 1. [조이스틱 연결하기](/docs/Set_Joystick.md)
+1. [Jetson TX2 개발을 위한 Jetpack 설치하기](/docs/Install_Jetpack.md)
+1. [TensorFlow 설치하기](/docs/Install_TensorFlow.md)
+1. [Keras 설치하기](/docs/Install_Keras.md)
 1. Python에서 AirSim 연동하기 (업로드 예정)
 
 ## 오픈소스 기계학습 프레임워크
