@@ -1,4 +1,4 @@
-# Ubuntu 16.04.03 LTS 설치
+# Ubuntu 16.04.04 LTS 설치
 * 기존 윈도우 시스템의 안정적인 운용을 위해 별도의 하드에 우분투를 설치하는 것이 안정적인 운용이 가능하다.
 * 데스크탑용 우분투를 다운로드한다.<br />https://www.ubuntu.com/download/desktop
 * 우분투 설치를 위해 USB를 부팅가능하도록 만든다.<br />https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows?_ga=2.252068618.2004108082.1514558137-364398367.1514558137#0
@@ -13,7 +13,6 @@
 아래 명령어를 터미널 창에서 수행한다. https://brunch.co.kr/@hancoma/90
 ```
 ~$ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-~$ sudo apt-get install libxss1 libgconf2-4 libappindicator1 libindacator7
 ~$ sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 방법2.  
@@ -55,25 +54,10 @@ deactivate
 ~$ sudo apt-get install git
 ```
 
-
-# Anaconda 설치 (개발환경용으로는 비추천)
-※ Anaconda 기반의 개발환경은 향후 삭제 예정
-※ Tensorflow 1.4.0에서는 Python 3.6을 지원한다. [참고사이트](https://www.tensorflow.org/install/install_linux#python_36)
-* 다운로드한다. https://repo.continuum.io/archive/Anaconda3-5.0.1-Linux-x86_64.sh
-* 터미널 창에서 아래와 같이 입력하여 설치한다.
+# Pycharm 설치
+* Python IDE로 유명한 Pycharm을 설치한다. (markdown도 지원하는 plugin이 공개되어 github 사용에도 유리하다.)
+* 터미널 창에서 아래와 같이 입력하여 설치한다. [참고사이트](https://www.jetbrains.com/help/pycharm/install-and-set-up-pycharm.html#linux)
 ```
-~$ bash ~/Downloads/Anaconda3-5.0.1-Linux-x86_64.sh
-```
-  * 최신 버전 다운로드 링크: https://www.anaconda.com/download/#linux
-  * 설치방법 링크: https://docs.anaconda.com/anaconda/install/linux
-* .bashrc에 'PATH'를 설정한다.
-```
-~$ cd ~
-~$ gedit .bashrc
-~$ export PATH="/<path to anaconda>/bin:$PATH"
-~$ source .bashrc
-```
-* 'Anaconda Navigator'를 실행한다.
-```
-~$ anaconda-navigator
+~$ sudo snap install pycharm-community --classic
+~$ pycharm-community
 ```
