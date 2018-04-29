@@ -2,7 +2,7 @@
 * 기존 윈도우 시스템의 안정적인 운용을 위해 별도의 하드에 우분투를 설치하는 것이 안정적인 운용이 가능하다.
 * 데스크탑용 우분투를 다운로드한다.<br />https://www.ubuntu.com/download/desktop
 * 우분투 설치를 위해 USB를 부팅가능하도록 만든다.<br />https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows?_ga=2.252068618.2004108082.1514558137-364398367.1514558137#0
-* 설치할 때 'Swap' 영역은 16GB, '/' 영역은 20GB, '/home' 영역은 HDD의 나머지를 할당한다.
+* 설치할 때 'Swap' 영역은 16GB, '/' 영역은 32GB, '/home' 영역은 HDD의 나머지를 할당한다.
   * MATLAB과 같이 무거운 프로그램을 설치할 예정이라면 '/'영역의 크기를 여유롭게 할당해야 함.
   * 이때 '/boot' 파티션을 할당하게 되면 컴퓨터 부팅 시에 부트로더가 실행되어 기존의 OS와 Ubuntu를 선택하는 화면이 나오게 할 수 있고, 그렇지 않으면 부팅 시에 'F12(메인보드 제조사마다 다름)' 등을 눌러 부팅장치 우선순위를 변경해서 부팅할 OS를 선택할 수 있도록 할 수 있다. 필자는 후자를 선택하였다.
 * Ubuntu에서 한글입력이 가능하도록 설정한다.<br />http://hochulshin.com/ubuntu-1604-hangul/
@@ -17,28 +17,27 @@
 # virtualenv 설치하기 [[참고](https://gist.github.com/Geoyi/d9fab4f609e9f75941946be45000632b)]
 * pip 설치
 ```
-sudo apt-get install python3-pip
+~$ sudo apt-get install python3-pip
 ```
 
 * pip3를 통해 virtualenv 설치하기
 ```
-pip3 intstall virtualenv
+~$ pip3 intstall virtualenv
 ```
 
-*  가상환경(virtual environment) 생성하기
+*  가상환경(virtual environment) 생성하기 (루트 디렉토리 ~$ 에서 실행하기)
 ```
-virtualenv ENVNAME
-virtualenv -p /usr/bin/python3 ENVNAME
+~$ virtualenv ENVNAME --python=python3.5
 ```
 
 * 가상환경 활성화
 ```
-source ENVNAME/bin/activate
+~$ source ENVNAME/bin/activate
 ```
 
 * 가상환경 비활성화
 ```
-deactivate
+~$ deactivate
 ```
 
 # git 설치
