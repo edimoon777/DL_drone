@@ -7,6 +7,10 @@
   * 이때 '/boot' 파티션을 할당하게 되면 컴퓨터 부팅 시에 부트로더가 실행되어 기존의 OS와 Ubuntu를 선택하는 화면이 나오게 할 수 있고, 그렇지 않으면 부팅 시에 'F12(메인보드 제조사마다 다름)' 등을 눌러 부팅장치 우선순위를 변경해서 부팅할 OS를 선택할 수 있도록 할 수 있다. 필자는 후자를 선택하였다.
 * Ubuntu에서 한글입력이 가능하도록 설정한다.<br />http://hochulshin.com/ubuntu-1604-hangul/
 
+# 그래픽 드라이버를 설치한다.
+```
+sudo apt-get install nvidia-384
+```
 # Chrome 설치
 아래 명령어를 터미널 창에서 수행한다. https://brunch.co.kr/@hancoma/90
 ```
@@ -17,12 +21,13 @@
 # virtualenv 설치하기 [[참고](https://gist.github.com/Geoyi/d9fab4f609e9f75941946be45000632b)]
 * pip 설치
 ```
+~$ sudo apt-get install python-pip
 ~$ sudo apt-get install python3-pip
 ```
 
-* pip3를 통해 virtualenv 설치하기
+* pip를 통해 virtualenv 설치하기
 ```
-~$ pip3 intstall virtualenv
+~$ pip intstall virtualenv
 ```
 
 *  가상환경(virtual environment) 생성하기 (루트 디렉토리 ~$ 에서 실행하기)
