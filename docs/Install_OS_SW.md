@@ -28,7 +28,7 @@ sudo apt-get install python3-pip
 
 * pip3를 통해 virtualenv 설치하기
 ```
-pip3 intstall virtualenv
+pip3 install virtualenv
 ```
 
 *  가상환경(virtual environment) 생성하기
