@@ -2,12 +2,12 @@
 
 1. 조이스틱 관련 패키지 설치하기
 ```
-~$ sudo apt-get joystick
+sudo apt-get joystick
 ```
 
 2. 각 축과 버튼들의 값이 올라오는 지 확인하기
 ```
-~$ jstest /dev/input/js0
+jstest /dev/input/js0
 ```
 
 # 조이스틱 USB ID 확인하기
@@ -15,5 +15,5 @@
 아래의 명령어를 통해 연결된 USB 장비들의 명칭과 16진수로 표현된 ID를 확인할 수 있다.
 
 ```
-~$ lsusb
+lsusb
 ```
