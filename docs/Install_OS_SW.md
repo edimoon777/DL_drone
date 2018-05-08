@@ -15,6 +15,7 @@
 ```
 sudo apt-get install nvidia-384
 ```
+
 # Chrome 설치
 아래 명령어를 터미널 창에서 수행한다.
 ```

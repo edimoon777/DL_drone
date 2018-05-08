@@ -36,6 +36,8 @@ make clean && make
 * 본 과정부터는 가상환경을 적용하는 것이 안정적인 개발환경을 구축하는데 도움이 된다.
 * 참고 사이트: https://www.tensorflow.org/install/install_linux#InstallingVirtualenv
 * 아래 코드 참고하여 설치한다. (ENVNAME은 사용자가 정하는 임의의 environment 명)
+
+1. PIP와 virtualEnvironment를 설치한다.
 ```
 sudo apt-get install python3-pip python3-dev python-virtualenv
 virtualenv --system-site-packages -p python3 ENVNAME
@@ -43,6 +45,7 @@ source ~/ENVNAME/bin/activate
 (ENVNAME) easy_install -U pip
 (ENVNAME) pip3 install --upgrade tensorflow-gpu
 ```
+
 * 아래 코드를 참고하여 정상설치 여부를 확인한다.
 ```
 (ENVNAME) python
