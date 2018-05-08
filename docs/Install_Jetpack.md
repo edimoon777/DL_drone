@@ -42,16 +42,6 @@
   * 2018.4.23. 현재 아래 환경까지 검증이 완료되었다.
   * Jetson TX2 - JetPack 3.2 / L4T R28.2 aarch64 (Ubuntu 16.04 LTS) inc. TensorRT 3.0 RC2
 
-* 가상환경 신규생성 또는 활성화
-  * NVcaffe와 DIGITS를 위해 설치되는 패키지들이 다른 개발환경에 영향을 줄 것이므로 가상환경을 설정하는 것을 추천함.
-    * 신규생성
-      ```
-      virtualenv -p /usr/bin/python ENVNAME
-      ```
-    * 또는 활성화
-      ```
-      source ENVNAME/bin/activate
-      ```
 * NVcaffe 설치 [참고](https://github.com/NVIDIA/DIGITS/blob/digits-6.0/docs/BuildCaffe.md)
   * Dependencies
     ```
@@ -106,8 +96,6 @@
     아래 경로 추가
     > export CAFFE_ROOT=/home/USER/caffe <br>
     export PYTHONPATH=/home/USER/caffe/python:$PYTHONPATH
-  * 터미널 창을 닫고 다시 실해하여 ENVNAME 가상환경을 활성화  
-
 
 * DIGITS 설치 [참고](https://github.com/NVIDIA/DIGITS/blob/digits-6.0/docs/BuildDigits.md)
   * NVIDIA 드라이버 설치
