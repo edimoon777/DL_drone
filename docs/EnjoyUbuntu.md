@@ -120,12 +120,12 @@
   ```
 * 마운트할 디렉토리 생성
   ```
-  sudo mkdir /MNTNAME
+  sudo mkdir /home/USER/MNTNAME
   ```
 * fstab 파일에 파티션 추가
   ```
   sudo gedit /etc/fstab
-  UUID=.... /MNTNAME ext4 defaults 0 0
+  UUID=.... /home/USER/MNTNAME ext4 defaults 0 0
   ```
 * 마운트 확인
   ```
