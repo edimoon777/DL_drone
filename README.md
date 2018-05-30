@@ -7,13 +7,11 @@
 
 # 알고리즘 연구환경 구축
 
-* [OS 및 기본 SW 설치하기](/docs/Install_OS_SW.md)
-* [AirSim 설치하기](https://github.com/Microsoft/AirSim/blob/master/docs/build_linux.md)
-* [Jetson TX2 개발을 위한 Jetpack 설치하기](/docs/Install_Jetpack.md)
-* Jetson TX2 예제(업데이트 예정)
-* [TensorFlow 설치하기](/docs/Install_TensorFlow.md)
-* [Keras 설치하기](/docs/Install_Keras.md)
-* [조이스틱 연결하기](/docs/Set_Joystick.md)
+* [OS 및 기본 SW 설치](/docs/Install_OS_SW.md)
+* [AirSim 설치](https://github.com/Microsoft/AirSim/blob/master/docs/build_linux.md)
+* [Jetson TX2 개발을 위한 Jetpack / NVcaffe / DIGITS 설치](/docs/Install_Jetpack.md)
+* [TensorFlow 설치](/docs/Install_TensorFlow.md)
+* [Keras 설치](/docs/Install_Keras.md)
 
 # 기계학습 프레임워크 비교
 * [딥러닝 프레임워크 비교](https://www.slideshare.net/JunyiSong1/ss-75552936)

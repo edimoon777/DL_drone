@@ -1,56 +1,65 @@
-# CUDA 9.0 설치
-* 다운로드 링크: https://developer.nvidia.com/cuda-90-download-archive
-* Linux > x86_64 > Ubuntu > 16.04 > deb (network) 순으로 선택하고, Base Install를 다운로드한다.
-* 다운로드 디렉토리로 이동하여 아래 명령을 실행한다.
-```
-sudo dpkg -i cuda-repo-ubuntu1604_9.0.176-1_amd64.deb
-sudo apt-key adv --fetch-keys http://developer.download.nvidia.com/compute/cuda/repos/ubuntu1604/x86_64/7fa2af80.pub
-sudo apt-get update
-sudo apt-get install cuda-9-0
-```
-* 재부팅한다.
-* 아래와 같이 .bashrc에 path를 추가한다.
-```
-export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
-```
+# NVIDIA Driver / CUDA / cuDNN 설치 확인
+* NVIDIA Driver v3.84이상 설치여부 확인하기
+  ```
+  nvidia -smi
+  ```
+  * 버전이 낮다면 [OS 및 기본 SW 설치](/docs/Install_OS_SW.md) 편 참고
+* CUDA v9.0 설치여부 확인하기
+  ```
+  nvcc --version
+  ```
+  * 버전이 낮다면 [Jetson TX2 개발을 위한 Jetpack / NVcaffe / DIGITS 설치](/docs/Install_Jetpack.md) 편 참고
+* cuDNN v7.0.5 설치여부 확인하기
+  ```
+  cat /usr/include/cudnn.h | grep CUDNN_MAJOR -A 2
+  ```
+  * 버전이 낮다면 [Jetson TX2 개발을 위한 Jetpack / NVcaffe / DIGITS 설치](/docs/Install_Jetpack.md) 편 참고
+* cuDNN 버전을 v7.0.5로 고정하기
+  ```
+  sudo apt-mark hold libcudnn7 libcudnn7-dev libcudnn7-doc
+  ```
 
-# cuDNN v7.0.5 설치
-* 다운로드 링크: https://developer.nvidia.com/rdp/cudnn-download
-* Runtime Lib.(deb), Developer Lib.(deb), Code Sampes...(deb) 다운로드하고 HOME 디렉토리로 이동한 후, 아래코드 실행한다.
-```
-sudo dpkg -i libcudnn7_7.0.5.15-1+cuda9.0_amd64.deb
-sudo dpkg -i libcudnn7-dev_7.0.5.15-1+cuda9.0_amd64.deb
-sudo dpkg -i libcudnn7-doc_7.0.5.15-1+cuda9.0_amd64.deb
-```
-* 아래 코드를 실행하여, 설치가 제대로 되었는지 확인한다.
-```
-cp -r /usr/src/cudnn_samples_v7/ $HOME
-cd $HOME/cudnn_samples_v7/mnistCUDNN
-make clean && make
- ./mnistCUDNN
-```
-(Test passed!가 출력되면 정상 설치된 것이다.)
+# TensorFlow v1.8 설치 (v1.7부터 tensorRT와 통합)
+* 개요
+  * 참고 사이트: https://www.tensorflow.org/install/install_linux
+  * 안정적인 개발환경을 구축을 위해 Virtualenv 기반 설치  
+  * GPU를 사용하는 버전을 중심으로 설명
 
-# TensorFlow 1.6 설치 (Python 3.n 기준)
-* 본 과정부터는 가상환경을 적용하는 것이 안정적인 개발환경을 구축하는데 도움이 된다.
-* 참고 사이트: https://www.tensorflow.org/install/install_linux#InstallingVirtualenv
-* 아래 코드 참고하여 설치한다. (ENVNAME은 사용자가 정하는 임의의 environment 명)
+* CUDA Profiler Tools Interface 설치
+  * 설치
+    ```
+    sudo apt-get install cuda-command-line-tools-9-0
 
-1. PIP와 virtualEnvironment를 설치한다.
-```
-sudo apt-get install python3-pip python3-dev python-virtualenv
-virtualenv --system-site-packages -p python3 ENVNAME
-source ~/ENVNAME/bin/activate
-(ENVNAME) easy_install -U pip
-(ENVNAME) pip3 install --upgrade tensorflow-gpu
-```
-
-* 아래 코드를 참고하여 정상설치 여부를 확인한다.
-```
-(ENVNAME) python
->>> import tensorflow as tf
->>> hello = tf.constant('Hello, TensorFlow!')
->>> sess = tf.Session()
->>> print(sess.run(hello))
-```
+    ```
+  * `sudo gedit ~/.bashrc`를 통해 경로 추가
+    ```
+    export LD_LIBRARY_PATH=${LD_LIBRARY_PATH:+${LD_LIBRARY_PATH}:}/usr/local/cuda/extras/CUPTI/lib64
+    ```
+* 가상환경 생성
+  ```
+  virtualenv --system-site-packages ENVNAME # for Python 2.7
+  virtualenv --system-site-packages -p python3 ENVNAME # for Python 3.n  
+  ```     
+* 가상환경 활성화
+  ```
+  source ~/ENVNAME/bin/activate
+  ```
+* pip v8.1 이상인지 확인
+  ```
+  easy_install -U pip
+  ```
+* 가상환경에서 GPU용 tensorflow 설치
+  ```
+  pip install --upgrade tensorflow-gpu  # for Python 2.7 and GPU
+  pip3 install --upgrade tensorflow-gpu # for Python 3.n and GPU
+  ```    
+* 설치여부 확인
+  * 가산환경 활성화 여부 확인 후 `python` 실행
+  * 아래 명령어 코딩
+    ```
+    import tensorflow as tf
+    hello = tf.constant('Hello, TensorFlow!')
+    sess = tf.Session()
+    print(sess.run(hello))
+    ```
+  * `Hello, TensorFlow!` 출력되는 지 확인

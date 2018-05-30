@@ -13,7 +13,7 @@
 
 # 그래픽 드라이버를 설치
 ```
-sudo apt-get install nvidia-384
+sudo apt-get install nvidia-390
 ```
 
 # Chrome 설치
@@ -24,15 +24,10 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 ```
 
 # virtualenv 설치하기 [[참고](https://gist.github.com/Geoyi/d9fab4f609e9f75941946be45000632b)]
-* pip 설치
+* pip 및 Virtualenv 설치
 ```
-sudo apt-get install python-pip
-sudo apt-get install python3-pip
-```
-
-* pip를 통해 virtualenv 설치
-```
-pip intstall virtualenv
+sudo apt-get install python-pip python-dev python-virtualenv
+sudo apt-get install python3-pip python3-dev python-virtualenv
 ```
 
 *  가상환경(virtual environment) 생성하기 (루트 디렉토리 에서 실행하기)
