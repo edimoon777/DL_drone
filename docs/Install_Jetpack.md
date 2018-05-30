@@ -1,10 +1,4 @@
 # Jetpack 설치
-* NVIDIA 드라이버 설치
-  ```
-  sudo apt-get install nvidia-384
-  sudo reboot
-  ```
-
 * cuDNN 설치
   * 설치된 CUDA 버전(v9.0)에 맞는 cuDNN(v7.0.5) 다운로드 [링크](https://developer.nvidia.com/cudnn)
     > cuDNN v7.0.5 Runtime Library for Ubuntu16.04 (Deb) <br>
@@ -16,6 +10,13 @@
     sudo dpkg -i libcudnn7-dev_7.0.5.15-1+cuda9.0_amd64.deb 
     sudo dpkg -i libcudnn7-doc_7.0.5.15-1+cuda9.0_amd64.deb
     ```
+   * 아래 코드를 실행하여, 설치가 제대로 되었는지 확인한다. (Test passed!가 출력되면 정상 설치된 것이다.)
+     ```
+     cp -r /usr/src/cudnn_samples_v7/ $HOME
+     cd $HOME/cudnn_samples_v7/mnistCUDNN
+     make clean && make
+     ./mnistCUDNN
+     ```
 
 * 최신 버전(3.2 L4T)을 다운로드 받는다. [링크](https://developer.nvidia.com/embedded/jetpack)
   * JetPaqck 3.2 L4T 기준 설명
